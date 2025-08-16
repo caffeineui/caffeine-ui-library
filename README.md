@@ -2,6 +2,22 @@
 
 Official asset library for Caffeine UI templates (images, icons, fonts, 3D, audio/video). No application code in this repo.
 
+## Distribution Model
+
+- **Asset Library (GitHub)**: This repository contains ONLY assets (images, music, 3D models, etc.) used by templates
+- **Caffeine UI Website**: 
+  - Displays templates using these assets
+  - Users can view and **copy free code** directly from the website with "View Code" button
+  - Free templates are single HTML files with all code in one place
+  - Free templates require NO payment
+- **Premium Templates**:
+  - Same exact designs but in different frameworks (Next.js, React, Web3, etc.)
+  - Available via **download** (not just copying)
+  - Multiple payment options:
+    - Credit/debit cards (Visa, Mastercard, etc.)
+    - ICP tokens
+  - Affordable pricing (as low as $1)
+
 ## What's inside
 
 - **/images/** - Brand logos, photography, and textures

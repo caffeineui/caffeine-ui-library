@@ -1,6 +1,49 @@
-# Caffeine UI – Template Creation Guide
+# Caffeine UI – Template Creation Gui## 🛠 Example Annotation (add to top of each template file)
 
-This guide documents the steps required whenever creating or publishing a new Caffeine UI template.  
+```tsx
+/* 
+Caffeine UI – Template Creation Notes
+-------------------------------------
+1. Append "Caffeine UI" to template name.
+2. Use project logo on cover, "Powered by Caffeine UI" in footer.
+3. Save as <n>-caffeine-ui.pbr.
+4. Place final template into /templates folder.
+*/
+```
+
+## 📋 Distribution Model
+
+- **Free Templates**: 
+  - Complete single HTML files (entire page in one file)
+  - Code is directly accessible on the Caffeine UI website for copying
+  - Opens in the browser for immediate preview
+  - No payment required
+- **Premium Templates**: 
+  - Same exact designs in multiple frameworks:
+    - React
+    - Next.js
+    - Web3
+    - More frameworks coming soon
+  - Hosted on Internet Computer Protocol (ICP) for download
+  - Multiple payment options:
+    - Credit/debit cards (Visa, Mastercard, etc.)
+    - ICP tokens
+  - Affordable pricing (as low as $1)
+- **Asset Library**: All assets used in templates are stored in this GitHub repository only
+- **Website Integration**: Templates on the website reference assets from this repository
+
+### User Experience Flow
+
+1. User visits the Caffeine UI website
+2. They browse template thumbnails and preview examples
+3. For free templates:
+   - Click to open in browser
+   - Click "View Code" to see the entire HTML file
+   - Copy the code directly
+4. For premium templates (same design, different frameworks):
+   - Select desired framework version
+   - Pay via credit/debit card or ICP tokens
+   - Download the complete templatede documents the steps required whenever creating or publishing a new Caffeine UI template.  
 Keep this file updated so future templates stay consistent.
 
 ---

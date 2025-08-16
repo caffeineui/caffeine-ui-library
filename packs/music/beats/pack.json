@@ -1,0 +1,21 @@
+{
+  "name": "Caffeine UI Beats",
+  "slug": "beats",
+  "category": "music",
+  "version": "1.0.0",
+  "updated": "2025-08-16",
+  "description": "Modern music production template with 3D elements",
+  "variations": ["standard", "minimal", "producer"],
+  "assets": [
+    {
+      "id": "microphone-3d",
+      "type": "glb",
+      "path": "../../../models/glb/microphone-helindu/microphone.glb",
+      "license": "CC Attribution (CC BY)",
+      "source": "Sketchfab",
+      "author": "Helindu",
+      "attribution": "Microphone by Helindu is licensed under Creative Commons Attribution",
+      "notes": "3D model used in the Beats template hero section"
+    }
+  ]
+}

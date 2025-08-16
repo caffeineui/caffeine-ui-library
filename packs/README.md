@@ -5,6 +5,7 @@ This directory contains template-specific asset packs, organized by industry cat
 ## Directory Structure
 
 Asset packs are organized in a two-level hierarchy:
+
 ```
 /packs/
   /<category>/
@@ -15,6 +16,7 @@ Asset packs are organized in a two-level hierarchy:
 ```
 
 Categories include:
+
 - **music** - Assets for music industry templates
 - **food** - Assets for food industry templates
 - **photography** - Assets for photography templates

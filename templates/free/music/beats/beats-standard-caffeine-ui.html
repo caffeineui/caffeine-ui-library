@@ -1,0 +1,176 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Beats Studio - Caffeine UI</title>
+    <style>
+        /* Basic styles for demo purposes */
+        body {
+            font-family: 'Inter', -apple-system, BlinkMacSystemFont, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #0e0e10;
+            color: #ffffff;
+        }
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 0 20px;
+        }
+        header {
+            padding: 2rem 0;
+            text-align: center;
+        }
+        .hero {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 4rem 0;
+        }
+        .hero-text {
+            flex: 1;
+            padding-right: 2rem;
+        }
+        .hero-model {
+            flex: 1;
+            height: 400px;
+            position: relative;
+        }
+        h1 {
+            font-size: 3.5rem;
+            margin-bottom: 1rem;
+            background: linear-gradient(to right, #ff4d4d, #f9cb28);
+            background-clip: text;
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+        }
+        p {
+            font-size: 1.2rem;
+            line-height: 1.6;
+            opacity: 0.8;
+        }
+        .cta {
+            background: linear-gradient(to right, #ff4d4d, #f9cb28);
+            color: #000000;
+            font-weight: bold;
+            padding: 1rem 2rem;
+            border: none;
+            border-radius: 30px;
+            font-size: 1rem;
+            cursor: pointer;
+            margin-top: 1.5rem;
+        }
+        footer {
+            text-align: center;
+            padding: 2rem 0;
+            opacity: 0.7;
+            font-size: 0.9rem;
+        }
+        .attribution {
+            font-size: 0.7rem;
+            opacity: 0.5;
+            margin-top: 3rem;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h3>CAFFEINE UI TEMPLATE</h3>
+        </header>
+
+        <section class="hero">
+            <div class="hero-text">
+                <h1>Beats Studio</h1>
+                <p>Create, produce, and share your music with the world. A modern platform for modern artists.</p>
+                <button class="cta">Start Creating</button>
+            </div>
+            <div class="hero-model" id="model-container">
+                <!-- 3D model will be loaded here via script -->
+            </div>
+        </section>
+
+        <div class="attribution">
+            <p>Microphone model by Helindu is licensed under Creative Commons Attribution</p>
+        </div>
+
+        <footer>
+            <p>© 2025 Beats Studio - Powered by Caffeine UI</p>
+        </footer>
+    </div>
+
+    <!-- ThreeJS for 3D model rendering -->
+    <script async src="https://unpkg.com/es-module-shims@1.6.3/dist/es-module-shims.js"></script>
+    <script type="importmap">
+        {
+            "imports": {
+                "three": "https://unpkg.com/three@0.160.0/build/three.module.js",
+                "three/addons/": "https://unpkg.com/three@0.160.0/examples/jsm/"
+            }
+        }
+    </script>
+    <script type="module">
+        import * as THREE from 'three';
+        import { GLTFLoader } from 'three/addons/loaders/GLTFLoader.js';
+        import { OrbitControls } from 'three/addons/controls/OrbitControls.js';
+
+        // Set up scene
+        const container = document.getElementById('model-container');
+        const scene = new THREE.Scene();
+        const camera = new THREE.PerspectiveCamera(75, container.clientWidth / container.clientHeight, 0.1, 1000);
+        
+        const renderer = new THREE.WebGLRenderer({ antialias: true, alpha: true });
+        renderer.setSize(container.clientWidth, container.clientHeight);
+        container.appendChild(renderer.domElement);
+        
+        // Add lighting
+        const ambientLight = new THREE.AmbientLight(0xffffff, 0.5);
+        scene.add(ambientLight);
+        
+        const directionalLight = new THREE.DirectionalLight(0xffffff, 1);
+        directionalLight.position.set(5, 5, 5);
+        scene.add(directionalLight);
+
+        // Camera position
+        camera.position.z = 5;
+        
+        // Add controls
+        const controls = new OrbitControls(camera, renderer.domElement);
+        controls.enableDamping = true;
+        controls.dampingFactor = 0.05;
+        
+        // Load microphone model
+        const loader = new GLTFLoader();
+        loader.load(
+            // Use the URL from your repository
+            'https://raw.githubusercontent.com/caffeineui/caffeine-ui-library/main/models/glb/microphone-helindu/microphone.glb',
+            function(gltf) {
+                const model = gltf.scene;
+                model.scale.set(1.5, 1.5, 1.5);
+                scene.add(model);
+                
+                // Auto-rotate
+                function animate() {
+                    requestAnimationFrame(animate);
+                    model.rotation.y += 0.01;
+                    controls.update();
+                    renderer.render(scene, camera);
+                }
+                animate();
+            },
+            undefined,
+            function(error) {
+                console.error('Error loading model:', error);
+            }
+        );
+        
+        // Handle window resize
+        window.addEventListener('resize', () => {
+            camera.aspect = container.clientWidth / container.clientHeight;
+            camera.updateProjectionMatrix();
+            renderer.setSize(container.clientWidth, container.clientHeight);
+        });
+    </script>
+</body>
+</html>

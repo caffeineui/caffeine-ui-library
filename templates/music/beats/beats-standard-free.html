@@ -1,0 +1,331 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Beats - Caffeine UI Template (Free Version)</title>
+  <style>
+    /* Basic Reset */
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+    
+    body {
+      font-family: 'Inter', -apple-system, BlinkMacSystemFont, sans-serif;
+      color: #ffffff;
+      background-color: #0a0a0a;
+      line-height: 1.6;
+    }
+    
+    /* Container */
+    .container {
+      max-width: 1200px;
+      margin: 0 auto;
+      padding: 0 20px;
+    }
+    
+    /* Header */
+    header {
+      padding: 30px 0;
+    }
+    
+    .navbar {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+    }
+    
+    .logo {
+      font-size: 28px;
+      font-weight: 700;
+      background: linear-gradient(90deg, #ff4d4d, #f9cb28);
+      -webkit-background-clip: text;
+      color: transparent;
+    }
+    
+    .nav-links {
+      display: flex;
+      list-style: none;
+    }
+    
+    .nav-links li {
+      margin-left: 30px;
+    }
+    
+    .nav-links a {
+      color: #ffffff;
+      text-decoration: none;
+      transition: color 0.3s;
+    }
+    
+    .nav-links a:hover {
+      color: #ff4d4d;
+    }
+    
+    /* Hero Section */
+    .hero {
+      padding: 100px 0;
+      text-align: center;
+      position: relative;
+    }
+    
+    .hero h1 {
+      font-size: 64px;
+      margin-bottom: 20px;
+      background: linear-gradient(90deg, #ff4d4d, #f9cb28);
+      -webkit-background-clip: text;
+      color: transparent;
+    }
+    
+    .hero p {
+      font-size: 20px;
+      max-width: 600px;
+      margin: 0 auto 40px;
+    }
+    
+    .cta-button {
+      display: inline-block;
+      padding: 15px 30px;
+      background: linear-gradient(90deg, #ff4d4d, #f9cb28);
+      color: #ffffff;
+      text-decoration: none;
+      border-radius: 30px;
+      font-weight: 600;
+      transition: transform 0.3s, box-shadow 0.3s;
+    }
+    
+    .cta-button:hover {
+      transform: translateY(-3px);
+      box-shadow: 0 10px 20px rgba(255, 77, 77, 0.3);
+    }
+    
+    /* 3D Model Container */
+    .model-container {
+      margin: 40px auto;
+      height: 400px;
+      width: 100%;
+      position: relative;
+    }
+    
+    /* Features Section */
+    .features {
+      padding: 80px 0;
+      background-color: #111111;
+    }
+    
+    .features h2 {
+      text-align: center;
+      font-size: 36px;
+      margin-bottom: 60px;
+    }
+    
+    .features-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+      gap: 40px;
+    }
+    
+    .feature-card {
+      background-color: #1a1a1a;
+      padding: 30px;
+      border-radius: 10px;
+      transition: transform 0.3s;
+    }
+    
+    .feature-card:hover {
+      transform: translateY(-10px);
+    }
+    
+    .feature-card h3 {
+      font-size: 24px;
+      margin-bottom: 15px;
+      color: #f9cb28;
+    }
+    
+    /* Footer */
+    footer {
+      padding: 60px 0;
+      text-align: center;
+      background-color: #0a0a0a;
+    }
+    
+    .footer-links {
+      display: flex;
+      justify-content: center;
+      list-style: none;
+      margin-bottom: 20px;
+    }
+    
+    .footer-links li {
+      margin: 0 15px;
+    }
+    
+    .footer-links a {
+      color: #888;
+      text-decoration: none;
+      transition: color 0.3s;
+    }
+    
+    .footer-links a:hover {
+      color: #ff4d4d;
+    }
+    
+    .attribution {
+      font-size: 14px;
+      color: #666;
+      margin-top: 20px;
+    }
+    
+    /* Responsive */
+    @media (max-width: 768px) {
+      .hero h1 {
+        font-size: 40px;
+      }
+      
+      .nav-links {
+        display: none;
+      }
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <div class="container">
+      <nav class="navbar">
+        <div class="logo">BEATS</div>
+        <ul class="nav-links">
+          <li><a href="#">Home</a></li>
+          <li><a href="#">Features</a></li>
+          <li><a href="#">Pricing</a></li>
+          <li><a href="#">Contact</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <section class="hero">
+    <div class="container">
+      <h1>Create. Produce. Inspire.</h1>
+      <p>The ultimate platform for music creators and producers. Share your beats with the world.</p>
+      <a href="#" class="cta-button">Start Creating</a>
+      
+      <div class="model-container" id="model-container">
+        <!-- 3D Model will be loaded here with JavaScript -->
+      </div>
+    </div>
+  </section>
+
+  <section class="features">
+    <div class="container">
+      <h2>Premium Features</h2>
+      <div class="features-grid">
+        <div class="feature-card">
+          <h3>Beat Marketplace</h3>
+          <p>Sell your beats directly to artists and producers worldwide with secure payment processing.</p>
+        </div>
+        <div class="feature-card">
+          <h3>Collaboration Tools</h3>
+          <p>Connect with other producers and artists to collaborate on projects in real-time.</p>
+        </div>
+        <div class="feature-card">
+          <h3>Advanced Analytics</h3>
+          <p>Track your plays, sales, and audience demographics with our comprehensive analytics dashboard.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <footer>
+    <div class="container">
+      <ul class="footer-links">
+        <li><a href="#">About</a></li>
+        <li><a href="#">Terms</a></li>
+        <li><a href="#">Privacy</a></li>
+        <li><a href="#">Help</a></li>
+      </ul>
+      <p>&copy; 2025 Beats - Caffeine UI Template</p>
+      <p class="attribution">Microphone by Helindu is licensed under Creative Commons Attribution</p>
+    </div>
+  </footer>
+
+  <script type="module">
+    // Import three.js
+    import * as THREE from 'https://cdn.jsdelivr.net/npm/three@0.132.2/build/three.module.js';
+    import { OrbitControls } from 'https://cdn.jsdelivr.net/npm/three@0.132.2/examples/jsm/controls/OrbitControls.js';
+    import { GLTFLoader } from 'https://cdn.jsdelivr.net/npm/three@0.132.2/examples/jsm/loaders/GLTFLoader.js';
+
+    // Set up the scene
+    const container = document.getElementById('model-container');
+    const scene = new THREE.Scene();
+    
+    // Camera
+    const camera = new THREE.PerspectiveCamera(75, container.clientWidth / container.clientHeight, 0.1, 1000);
+    camera.position.set(0, 0, 5);
+    
+    // Renderer
+    const renderer = new THREE.WebGLRenderer({ antialias: true, alpha: true });
+    renderer.setSize(container.clientWidth, container.clientHeight);
+    renderer.setClearColor(0x000000, 0);
+    container.appendChild(renderer.domElement);
+    
+    // Controls
+    const controls = new OrbitControls(camera, renderer.domElement);
+    controls.enableDamping = true;
+    
+    // Lights
+    const ambientLight = new THREE.AmbientLight(0xffffff, 0.5);
+    scene.add(ambientLight);
+    
+    const directionalLight = new THREE.DirectionalLight(0xff4d4d, 1);
+    directionalLight.position.set(1, 1, 1);
+    scene.add(directionalLight);
+    
+    const pointLight = new THREE.PointLight(0xf9cb28, 1);
+    pointLight.position.set(-1, 1, 1);
+    scene.add(pointLight);
+    
+    // Load the 3D model
+    const loader = new GLTFLoader();
+    const modelUrl = 'https://raw.githubusercontent.com/caffeineui/caffeine-ui-library/main/models/glb/microphone-helindu/microphone.glb';
+    
+    loader.load(
+      modelUrl,
+      (gltf) => {
+        const model = gltf.scene;
+        scene.add(model);
+        
+        // Center the model
+        const box = new THREE.Box3().setFromObject(model);
+        const center = box.getCenter(new THREE.Vector3());
+        model.position.x = -center.x;
+        model.position.y = -center.y;
+        model.position.z = -center.z;
+        
+        // Auto rotate
+        function animate() {
+          requestAnimationFrame(animate);
+          model.rotation.y += 0.005;
+          controls.update();
+          renderer.render(scene, camera);
+        }
+        animate();
+      },
+      (xhr) => {
+        console.log((xhr.loaded / xhr.total * 100) + '% loaded');
+      },
+      (error) => {
+        console.error('Error loading model:', error);
+      }
+    );
+    
+    // Handle window resize
+    window.addEventListener('resize', () => {
+      camera.aspect = container.clientWidth / container.clientHeight;
+      camera.updateProjectionMatrix();
+      renderer.setSize(container.clientWidth, container.clientHeight);
+    });
+  </script>
+</body>
+</html>

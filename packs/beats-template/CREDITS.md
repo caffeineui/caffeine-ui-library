@@ -5,6 +5,7 @@ This file contains credits and attribution for third-party assets used in the Ca
 ## Third-Party Assets
 
 ## Microphone 3D Model
+
 - Source: Sketchfab
 - Author: Helindu
 - License: CC Attribution (CC BY)

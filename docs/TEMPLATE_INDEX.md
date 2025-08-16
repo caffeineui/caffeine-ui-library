@@ -6,23 +6,45 @@ This file catalogs all Caffeine UI templates created to date, providing a quick 
 
 ### Music
 
-| Template Name      | Description                          | Asset Pack                      | Last Updated | Status | Variations |
-| ------------------ | ------------------------------------ | ------------------------------- | ------------ | ------ | ---------- |
-| Caffeine UI Beats  | Music production template with 3D elements | [music/beats](/packs/music/beats) | 2025-08-16   | Active | standard, minimal, producer |
+| Template Name     | Description                                | Asset Pack                        | Free Version | Premium Version | Last Updated | Status |
+| ----------------- | ------------------------------------------ | --------------------------------- | ------------ | --------------- | ------------ | ------ |
+| Caffeine UI Beats | Music production template with 3D elements | [music/beats](/packs/music/beats) | [HTML](/templates/free/music/beats/beats-standard-caffeine-ui.html) | React, Web3     | 2025-08-16   | Active |
 
 ### Food
-*No templates yet*
+
+_No templates yet_
 
 ### Photography
-*No templates yet*
+
+_No templates yet_
 
 ### Professional
-*No templates yet*
+
+_No templates yet_
 
 ### General
-| Template Name      | Description                          | Asset Pack                      | Last Updated | Status | Variations |
-| ------------------ | ------------------------------------ | ------------------------------- | ------------ | ------ | ---------- |
-| Minimal Studio     | Clean, minimalist workspace template | [minimal-studio](/packs/minimal-studio) | 2025-08-15   | Active | standard |
+
+| Template Name  | Description                          | Asset Pack                              | Free Version | Premium Version | Last Updated | Status |
+| -------------- | ------------------------------------ | --------------------------------------- | ------------ | --------------- | ------------ | ------ |
+| Minimal Studio | Clean, minimalist workspace template | [minimal-studio](/packs/minimal-studio) | HTML         | React           | 2025-08-15   | Active |
+
+## Free vs Premium Templates
+
+Caffeine UI offers both free and premium template versions:
+
+### Free Templates
+- Single HTML file with inline CSS/JS
+- Available in this GitHub repository
+- Copy-and-paste ready
+- Basic functionality
+- Located in the `/templates/free` directory
+
+### Premium Templates
+- Available on the Caffeine UI Platform
+- Framework versions (React, Next.js, Web3)
+- Component-based architecture
+- Additional features and variations
+- Includes support
 
 ## How to Update This Index
 
@@ -32,13 +54,7 @@ When you create a new template:
 2. Include:
    - Template name (with "Caffeine UI" suffix)
    - Brief description
-   - Link to the asset pack (if applicable)
+   - Link to the asset pack
+   - Free/Premium version availability
    - Last updated date
    - Status (Active, Deprecated, In Development)
-
-## Templates Directory
-
-For quick access to the actual template files:
-
-- All template files are stored in the `/templates` directory
-- Follow the naming convention: `<template-name>-caffeine-ui.pbr`

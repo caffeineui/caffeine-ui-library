@@ -6,6 +6,7 @@ This file catalogs all Caffeine UI templates created to date, providing a quick 
 
 | Template Name                       | Description                          | Asset Pack                              | Last Updated | Status |
 | ----------------------------------- | ------------------------------------ | --------------------------------------- | ------------ | ------ |
+| Caffeine UI Beats                   | Music production template with 3D elements | [beats-template](/packs/beats-template) | 2025-08-16   | Active |
 | Minimal Studio                      | Clean, minimalist workspace template | [minimal-studio](/packs/minimal-studio) | 2025-08-15   | Active |
 | _Add new templates above this line_ |                                      |                                         |              |        |
 

@@ -143,8 +143,8 @@
         // Load microphone model
         const loader = new GLTFLoader();
         loader.load(
-            // Use the URL from your repository
-            'https://raw.githubusercontent.com/caffeineui/caffeine-ui-library/main/models/glb/microphone-helindu/microphone.glb',
+            // Use CDN URL to avoid CORS issues
+            'https://cdn.jsdelivr.net/gh/caffeineui/caffeine-ui-library@main/models/glb/microphone-helindu/microphone.glb',
             function(gltf) {
                 const model = gltf.scene;
                 model.scale.set(1.5, 1.5, 1.5);

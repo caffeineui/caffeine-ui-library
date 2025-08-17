@@ -1,0 +1,12 @@
+# Caffeine UI Logo Files
+
+Place your logo files here with the following naming convention:
+
+- `caffeine-ui-logo-full.svg` - Full logo in SVG format
+- `caffeine-ui-logo-full.png` - Full logo in PNG format (high resolution)
+- `caffeine-ui-logo-mark.svg` - Just the logo mark/icon in SVG format
+- `caffeine-ui-logo-mark.png` - Just the logo mark/icon in PNG format
+- `caffeine-ui-logo-white.svg` - White version for dark backgrounds
+- `caffeine-ui-logo-dark.svg` - Dark version for light backgrounds
+
+For consistent branding, consider creating multiple resolution versions as needed.

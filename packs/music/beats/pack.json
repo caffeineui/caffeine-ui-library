@@ -11,10 +11,10 @@
       "id": "microphone-3d",
       "type": "glb",
       "path": "../../../models/glb/microphone-helindu/microphone.glb",
-      "license": "CC Attribution (CC BY)",
-      "source": "Sketchfab",
+      "license": "Creative Commons Attribution 4.0 International (CC BY 4.0)",
+      "source": "https://skfb.ly/onKFL",
       "author": "Helindu",
-      "attribution": "Microphone by Helindu is licensed under Creative Commons Attribution",
+      "attribution": "\"Microphone\" (https://skfb.ly/onKFL) by Helindu is licensed under Creative Commons Attribution (http://creativecommons.org/licenses/by/4.0/).",
       "notes": "3D model used in the Beats template hero section"
     }
   ]

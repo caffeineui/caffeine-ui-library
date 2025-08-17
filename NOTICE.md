@@ -17,10 +17,11 @@ Each asset within this repository should also have a corresponding `CREDITS.md` 
 
 When adding new assets to the library, please ensure that both this file and a local `CREDITS.md` file in the asset's directory are updated with the appropriate attribution information.
 
-## Microphone
+## Microphone 3D Model
 
-- Source: Sketchfab (add the specific URL when available)
+- Source: Sketchfab (https://skfb.ly/onKFL)
 - Author: Helindu
-- License: CC Attribution (CC BY)
-- Changes: None (or describe any modifications you've made)
-- Required attribution text (if any): "Microphone by Helindu is licensed under Creative Commons Attribution"
+- License: Creative Commons Attribution 4.0 International (CC BY 4.0)
+- License URL: https://creativecommons.org/licenses/by/4.0/
+- Changes: None
+- Required attribution text: "Microphone" (https://skfb.ly/onKFL) by Helindu is licensed under Creative Commons Attribution (http://creativecommons.org/licenses/by/4.0/).

@@ -2,11 +2,18 @@
 
 Place your logo files here with the following naming convention:
 
-- `caffeine-ui-logo-full.svg` - Full logo in SVG format
-- `caffeine-ui-logo-full.png` - Full logo in PNG format (high resolution)
-- `caffeine-ui-logo-mark.svg` - Just the logo mark/icon in SVG format
-- `caffeine-ui-logo-mark.png` - Just the logo mark/icon in PNG format
-- `caffeine-ui-logo-white.svg` - White version for dark backgrounds
-- `caffeine-ui-logo-dark.svg` - Dark version for light backgrounds
+## Required Logo Files:
+- `caffeine-ui-logo-full.svg` - Full logo in SVG format (REQUIRED - used in all templates)
+- `caffeine-ui-logo-white.svg` - White version for dark backgrounds (REQUIRED)
+- `caffeine-ui-logo-dark.svg` - Dark version for light backgrounds (REQUIRED)
 
-For consistent branding, consider creating multiple resolution versions as needed.
+## Recommended Additional Logo Files:
+- `caffeine-ui-logo-full.png` - Full logo in PNG format (high resolution, 1200×400px or similar)
+- `caffeine-ui-logo-mark.svg` - Just the logo mark/icon in SVG format (square logo)
+- `caffeine-ui-logo-mark.png` - Just the logo mark/icon in PNG format (512×512px)
+
+## Recommended Sizes:
+- For PNG versions: minimum 1200px width for full logo, 512×512px for mark/icon
+- SVG files will scale automatically to any size
+
+For consistent branding, all templates will reference these files using the raw GitHub URLs.
